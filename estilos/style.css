@@ -22,31 +22,21 @@ html{
 
 
 /* ENCABEZADO COMUN */
-.encabezado{
-    padding: 0.938rem;  
+.encabezado{ 
     position: relative;
 }
 
 .encabezadoPrincipal{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
 }
 
 .encabezadoAlt{
-    background-color: #f0f1f3;
     width: 100%;
-    height: 100px;
-    box-shadow: 0 0 10px 0 #000000;
-    border-radius: 10px;
-    padding: 0.938rem;
-    display: flex;
 }
 
 .logo{
     display: inline-block;
-    width: 300px;
+    width: 375px; 
 }
 
 .imagen{
@@ -54,14 +44,13 @@ html{
     height: 85px;
 }
 
-.encabezado__nav{
-    display: inline-block;
+.navbar-brand{
+    margin-right: 0;
 }
 
-.encabezado__lista{
-    list-style: none;
-    display: flex;
-
+.navbar-nav{
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .encabezado__item{
@@ -89,10 +78,11 @@ html{
     color: #fafaff;
     text-align: center;
     font-size: 3.2rem;
-    height: 550px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
 .hero__btn{
@@ -159,11 +149,10 @@ h1{
 }
 
 .catalogo__casa--text{
-padding: 20px;
-position: absolute;
-bottom: 0;
-width: 100%;
-height: 160px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 160px;
 }
 
 .catalogo__casa--text h2{
@@ -379,7 +368,7 @@ footer section{
     .encabezadoPrincipal{
         flex-direction: column;
     }
-    .logo{
+    .logo, .logoFooter{
         max-width: 75%;
     } 
     .catalogo__content{
